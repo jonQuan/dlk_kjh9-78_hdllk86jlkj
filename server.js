@@ -1,5 +1,20 @@
 var express = require('express');
 var app = express();
+var log4js = require('log4js');
+log4js.configure({
+	appenders: [
+		{ type: 'console' },{
+			type: 'file',
+			filename: 'logs',
+			maxLogSize: 1024,
+			backups:4,
+			category: 'normal'
+		}
+	],
+	replaceConsole: true
+});
+var logger = log4js.getLogger('normal');
+logger.info('Cheese is Gouda.');
 //var server = require('http').createServer(app);
 var https=require('https');
 var fs=require('fs');
@@ -14,10 +29,10 @@ var server=https.createServer(options,app, function (req,res) {
 })
 var SkyRTC = require('skyrtc').listen(server);
 var path = require("path");
-
-var port = process.env.PORT || 18320;
-//server.listen(port);
-server.listen(18320)
+console.log('process.env.PORT'+process.env.PORT);
+logger.info('process.env.PORT'+process.env.PORT);
+var port=process.env.PORT || 3000;
+server.listen(port)
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res) {
