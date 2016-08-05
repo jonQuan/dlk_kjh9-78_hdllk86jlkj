@@ -1,44 +1,18 @@
 var express = require('express');
 var app = express();
-var log4js = require('log4js');
-log4js.configure({
-	appenders: [
-		{ type: 'console' },{
-			type: 'file',
-			filename: 'logs',
-			maxLogSize: 1024,
-			backups:4,
-			category: 'normal'
-		}
-	],
-	replaceConsole: true
-});
-var logger = log4js.getLogger('normal');
-//var server = require('http').createServer(app);
-var https=require('https');
-var fs=require('fs');
-var privatekey=fs.readFileSync('privatekey.pem');
-var pc=fs.readFileSync('certificate.pem');
-var options={
-	key:privatekey,
-	cert:pc
-}
-var server=https.createServer(options,app, function (req,res) {
-	console.log(111);res.write('123');
-	//res.sendfile(__dirname + '/index.html');
-	res.end();
-	console.log(222);
-})
+var server = require('http').createServer(app);
 var SkyRTC = require('skyrtc').listen(server);
 var path = require("path");
-var port=process.env.PORT || 3000;
-server.listen(port)
+
+var port = process.env.PORT || 3000;
+
+server.listen(port);
+
 app.use(express.static(path.join(__dirname, 'public')));
-console.log('1111111111111'+app.get('/'));
+
 app.get('/', function(req, res) {
-	console.log(333);
+	console.log('端口:'+res)
 	res.sendfile(__dirname + '/index.html');
-	console.log(444);
 });
 
 SkyRTC.rtc.on('new_connect', function(socket) {
