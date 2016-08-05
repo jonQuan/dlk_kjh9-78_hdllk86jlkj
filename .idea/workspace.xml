@@ -25,8 +25,10 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-66">
-              <caret line="94" column="9" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="9" />
-              <folding />
+              <caret line="95" column="9" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="9" />
+              <folding>
+                <marker date="1470365375116" expanded="true" signature="140:254" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,17 +53,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="48" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="48" />
+            <state relative-caret-position="0">
+              <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -129,6 +131,7 @@
         <option value="$PROJECT_DIR$/public/SkyRTC-client.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -319,12 +322,12 @@
       <option name="presentableId" value="Default" />
       <updated>1470038829366</updated>
       <workItem from="1470038830836" duration="21703000" />
-      <workItem from="1470283096995" duration="6238000" />
+      <workItem from="1470283096995" duration="6857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27941000" />
+    <option name="totallyTimeSpent" value="28560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -368,7 +371,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1470365375116" expanded="true" signature="140:254" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -452,14 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/ws/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -517,8 +514,10 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-66">
-          <caret line="94" column="9" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="9" />
-          <folding />
+          <caret line="95" column="9" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="9" />
+          <folding>
+            <marker date="1470365375116" expanded="true" signature="140:254" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -542,6 +541,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
           <folding />
         </state>
       </provider>
