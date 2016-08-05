@@ -14,7 +14,6 @@ log4js.configure({
 	replaceConsole: true
 });
 var logger = log4js.getLogger('normal');
-logger.info('Cheese is Gouda.');
 //var server = require('http').createServer(app);
 var https=require('https');
 var fs=require('fs');
@@ -25,18 +24,20 @@ var options={
 	cert:pc
 }
 var server=https.createServer(options,app, function (req,res) {
+	console.log(111);
 	res.sendfile(__dirname + '/index.html');
+	console.log(222);
 })
 var SkyRTC = require('skyrtc').listen(server);
 var path = require("path");
-console.log('process.env.PORT'+process.env.PORT);
-logger.info('process.env.PORT'+process.env.PORT);
 var port=process.env.PORT || 3000;
 server.listen(port)
 app.use(express.static(path.join(__dirname, 'public')));
-
+console.log(process.env.NODE_ENV)
 app.get('/', function(req, res) {
+	console.log(333);
 	res.sendfile(__dirname + '/index.html');
+	console.log(444);
 });
 
 SkyRTC.rtc.on('new_connect', function(socket) {
