@@ -9,7 +9,6 @@ var options={
 	key:privatekey,
 	cert:pc
 }
-ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3;
 var server=https.createServer(options,app, function (req,res) {
 	res.sendfile(__dirname + '/index.html');
 })
