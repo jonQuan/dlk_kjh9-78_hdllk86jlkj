@@ -33,7 +33,7 @@ var path = require("path");
 var port=process.env.PORT || 3000;
 server.listen(port)
 app.use(express.static(path.join(__dirname, 'public')));
-console.log(process.env.NODE_ENV)
+console.log('1111111111111'+app.get('/'));
 app.get('/', function(req, res) {
 	console.log(333);
 	res.sendfile(__dirname + '/index.html');
