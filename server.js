@@ -25,7 +25,7 @@ var options={
 }
 var server=https.createServer(options,app, function (req,res) {
 	console.log(111);res.write('123');
-	res.sendfile(__dirname + '/index.html');
+	//res.sendfile(__dirname + '/index.html');
 	res.end();
 	console.log(222);
 })
