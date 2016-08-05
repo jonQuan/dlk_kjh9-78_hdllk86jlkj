@@ -1,0 +1,154 @@
+[33mcommit 5b9836f5dfe8c35976fe4caa4d4fbc84a4004c11[m
+Author: jonQuan <292418765@qq.com>
+Date:   Fri Aug 5 10:25:35 2016 +0800
+
+    init code
+
+[1mdiff --git a/.idea/SkyRTC-demo-master.iml b/.idea/SkyRTC-demo-master.iml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..dfb9e54[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/SkyRTC-demo-master.iml[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<module type="WEB_MODULE" version="4">[m
+[32m+[m[32m  <component name="NewModuleRootManager">[m
+[32m+[m[32m    <content url="file://$MODULE_DIR$" />[m
+[32m+[m[32m    <orderEntry type="inheritedJdk" />[m
+[32m+[m[32m    <orderEntry type="sourceFolder" forTests="false" />[m
+[32m+[m[32m    <orderEntry type="library" name="SkyRTC-demo-master-https node_modules" level="project" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</module>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/jsLibraryMappings.xml b/.idea/jsLibraryMappings.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ba4c234[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/jsLibraryMappings.xml[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="JavaScriptLibraryMappings">[m
+[32m+[m[32m    <file url="file://$PROJECT_DIR$" libraries="{SkyRTC-demo-master-https node_modules}" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/libraries/SkyRTC_demo_master_https_node_modules.xml b/.idea/libraries/SkyRTC_demo_master_https_node_modules.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..14e3630[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/libraries/SkyRTC_demo_master_https_node_modules.xml[m
+[36m@@ -0,0 +1,14 @@[m
+[32m+[m[32m<component name="libraryTable">[m
+[32m+[m[32m  <library name="SkyRTC-demo-master-https node_modules" type="javaScript">[m
+[32m+[m[32m    <properties>[m
+[32m+[m[32m      <option name="frameworkName" value="node_modules" />[m
+[32m+[m[32m      <sourceFilesUrls>[m
+[32m+[m[32m        <item url="file://$PROJECT_DIR$/node_modules" />[m
+[32m+[m[32m      </sourceFilesUrls>[m
+[32m+[m[32m    </properties>[m
+[32m+[m[32m    <CLASSES>[m
+[32m+[m[32m      <root url="file://$PROJECT_DIR$/node_modules" />[m
+[32m+[m[32m    </CLASSES>[m
+[32m+[m[32m    <SOURCES />[m
+[32m+[m[32m  </library>[m
+[32m+[m[32m</component>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/misc.xml b/.idea/misc.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..72abef0[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/misc.xml[m
+[36m@@ -0,0 +1,13 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="ProjectLevelVcsManager" settingsEditedManually="false">[m
+[32m+[m[32m    <OptionsSetting value="true" id="Add" />[m
+[32m+[m[32m    <OptionsSetting value="true" id="Remove" />[m
+[32m+[m[32m    <OptionsSetting value="true" id="Checkout" />[m
+[32m+[m[32m    <OptionsSetting value="true" id="Update" />[m
+[32m+[m[32m    <OptionsSetting value="true" id="Status" />[m
+[32m+[m[32m    <OptionsSetting value="true" id="Edit" />[m
+[32m+[m[32m    <ConfirmationsSetting value="0" id="Add" />[m
+[32m+[m[32m    <ConfirmationsSetting value="0" id="Remove" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/modules.xml b/.idea/modules.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..75d89cc[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/modules.xml[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="ProjectModuleManager">[m
+[32m+[m[32m    <modules>[m
+[32m+[m[32m      <module fileurl="file://$PROJECT_DIR$/.idea/SkyRTC-demo-master.iml" filepath="$PROJECT_DIR$/.idea/SkyRTC-demo-master.iml" />[m
+[32m+[m[32m    </modules>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6a4231c[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/workspace.xml[m
+[36m@@ -0,0 +1,550 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="ChangeListManager">[m
+[32m+[m[32m    <list default="true" id="c11dfce2-a2ec-4e98-99f9-188cb0931cb0" name="Default" comment="" />[m
+[32m+[m[32m    <ignored path="SkyRTC-demo-master.iws" />[m
+[32m+[m[32m    <ignored path=".idea/workspace.xml" />[m
+[32m+[m[32m    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />[m
+[32m+[m[32m    <option name="TRACKING_ENABLED" value="true" />[m
+[32m+[m[32m    <option name="SHOW_DIALOG" value="false" />[m
+[32m+[m[32m    <option name="HIGHLIGHT_CONFLICTS" value="true" />[m
+[32m+[m[32m    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />[m
+[32m+[m[32m    <option name="LAST_RESOLUTION" value="IGNORE" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />[m
+[32m+[m[32m  <component name="CreatePatchCommitExecutor">[m
+[32m+[m[32m    <option name="PATCH_PATH" value="" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />[m
+[32m+[m[32m  <component name="FavoritesManager">[m
+[32m+[m[32m    <favorites_list name="SkyRTC-demo-master" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="FileEditorManager">[m
+[32m+[m[32m    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">[m
+[32m+[m[32m      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/index.html">[m
+[32m+[m[32m          <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m            <state relative-caret-position="-66">[m
+[32m+[m[32m              <caret line="94" column="9" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="9" />[m
+[32m+[m[32m              <folding />[m
+[32m+[m[32m            </state>[m
+[32m+[m[32m          </provider>[m
+[32m+[m[32m        </entry>[m
+[32m+[m[32m      </file>[m
+[32m+[m[32m      <file leaf-file-name="serial" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/openssl-0.9.8k_WIN32/bin/demoCA/serial">[m
+[32m+[m[32m          <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m            <state relative-caret-position="0">[m
+[32m+[m[32m              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+[32m+[m[32m              <folding />[m
+[32m+[m[32m            </state>[m
+[32m+[m[32m          </provider>[m
+[32m+[m[32m        </entry>[m
+[32m+[m[32m      </file>[m
+[32m+[m[32m      <file leaf-file-name="openssl.cnf" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/openssl-0.9.8k_WIN32/openssl.cnf">[m
+[32m+[m[32m          <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m            <state relative-caret-position="5795">[m
+[32m+[m[32m              <caret line="305" column="10" selection-start-line="305" selection-start-column="10" selection-end-line="305" selection-end-column="10" />[m
+[32m+[m[32m              <folding />[m
+[32m+[m[32m            </state>[m
+[32m+[m[32m          </provider>[m
+[32m+[m[32m        </entry>[m
+[32m+[m[32m      </file>[m
+[32m+[m[32m      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/README.md">[m
+[32m+[m[32m          <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m            <state relative-caret-posit
