@@ -14,18 +14,7 @@ log4js.configure({
 	replaceConsole: true
 });
 var logger = log4js.getLogger('normal');
-//var server = require('http').createServer(app);
-var https=require('https');
-var fs=require('fs');
-var privatekey=fs.readFileSync('privatekey.pem');
-var pc=fs.readFileSync('certificate.pem');
-var options={
-	key:privatekey,
-	cert:pc
-}
-var server=https.createServer(options,app, function (req,res) {
-	res.sendfile(__dirname + '/index.html');
-})
+var server = require('http').createServer(app);
 var SkyRTC = require('skyrtc').listen(server);
 var path = require("path");
 var port=process.env.PORT || 3000;
