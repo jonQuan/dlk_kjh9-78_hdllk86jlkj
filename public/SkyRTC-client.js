@@ -87,6 +87,8 @@ var SkyRTC = function() {
             that = this;
         room = room || "";
         socket = this.socket = new WebSocket(server);
+        socket.protocol=14;
+        debugger;
         socket.onopen = function() {
             socket.send(JSON.stringify({
                 "eventName": "__join",
@@ -140,6 +142,7 @@ var SkyRTC = function() {
         });
 
         this.on('_new_peer', function(data) {
+            debugger;
             that.connections.push(data.socketId);
             var pc = that.createPeerConnection(data.socketId),
                 i, m;
@@ -194,6 +197,7 @@ var SkyRTC = function() {
         var that = this;
         options.video = !!options.video;
         options.audio = false;
+        debugger;
         if (getUserMedia) {
             this.numStreams++;
             try{
